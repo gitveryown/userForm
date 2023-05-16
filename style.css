@@ -1,0 +1,78 @@
+body{
+    font-family: 'Instrument Serif', serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+header {
+    font-weight: 400;
+    border-bottom: 1px solid gray;
+}
+
+header 
+h1,
+h3,
+form {
+    margin-top: 25px;
+    margin-left: 40px
+}
+
+form {
+    font-size: small;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    padding:15px;
+    gap: 5px;
+
+}
+
+.primary {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+input, select {
+    text-align: inherit;
+    border: 2px solid rgb(19, 103, 229);
+    border-radius: 5px;
+    padding:10px;
+}
+
+#gender, #dob{
+   margin-bottom:10px;
+}
+
+
+.btn {
+    width: 10vw;
+    padding: 10px;
+    background-color: rgb(19, 103, 229);
+    color: #fff;
+    font-size: 10px;
+    border-radius: 4px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    background: transparent;
+}
+
+.output {
+    background-color: rgba(247, 27, 130, 0.136);
+    padding: 40px 20px;
+    border-radius: 5px;
+    color: #000
+}
