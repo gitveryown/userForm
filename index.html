@@ -21,16 +21,16 @@
             <div class="container">
                 <form id="contactForm">
                 
-                    <label for="name" class="primary">Name:</label>
                     <div class="name" id="form">
+                        <label for="name" class="primary">Name:</label>
                         
                         
                             <label for="fName">First Name</label>
-                            <input type="text" name="results" id="fName">
+                            <input name="First Name" type="text" id="fName">
                         
                         
                             <label for="lname">Last Name</label>
-                            <input type="text" name="results" id="lName">
+                            <input name="Last Name" type="text" id="lName">
                         
                     </div>
                 
@@ -38,22 +38,22 @@
                     <div class="phone-email" id="form">
                         <label for="mobile" class="primary">Mobile Number:</label>
                         <label for="phone">Phone</label>
-                        <input type="tel" placeholder="(123) 456-7890" maxlength="10">
+                        <input name="Phone" type="tel" placeholder="(123) 456-7890" maxlength="10">
                         <label for="email">Email</label>
-                        <input type="email" name="results"placeholder="ex:name@example.com">
+                        <input name="Email" type="email" placeholder="ex:name@example.com">
                     </div>
                 
 
                     <div class="address" id="form">
                         <label for="address" class="primary">Address:</label>
                         <label for="street">Street Address</label>
-                        <input type="text" name="results" for="streetAddress">
+                        <input name="Street address" type="text" for="streetAddress">
                         <label for="city">City</label>
-                        <input type="text" for="city" name="results">
+                        <input name="City" type="text" for="city">
                         <label for="zip">Zip Code</label>
-                        <input type="text" for="zip" name="results">
+                        <input name="Zip code" type="text" for="zip">
                         <label for="country">Country</label>
-                        <select name="country">
+                        <select name="Country">
                                 <option>select country</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Aland Islands</option>
@@ -311,7 +311,7 @@
 
                         </select>
                         <label for="state">State / Province</label>
-                        <select name="state">
+                        <select name="State">
                             <option value="select state" selected>select state</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -369,16 +369,16 @@
 
                     <div id="gender">
                         <label for="genderOption1" class="primary">Gender:</label>
-                        <input type="radio" value="male" name="results">
+                        <input name="Gender" type="radio" value="male">
                         <label for="male">Male</label>
-                        <input type="radio" value="female" name="results">
+                        <input name="Gender" type="radio" value="female" >
                         <label for="genderOption2">Female</label>
                 
                     </div>
                         <div id="dob">
-                        <label for="dob" class="primary">Date-of-Birth:</label>
-                        <input type="date" for="dob" name="results">
-                    </div>
+                            <label for="dob" class="primary">Date-of-Birth:</label>
+                            <input name="Date of Birth" type="date" for="dob">
+                        </div>
                     
                     <button class="btn" id="btn" type="submit">Submit</button>
 
@@ -394,6 +394,6 @@
         </main>
        
 
+        <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

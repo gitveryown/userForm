@@ -6,20 +6,6 @@
 
 // const form = document.getElementById('contact-form');
 
-// form.addEventListener('submit', callbackFunction);
-// function callbackFunction(event) {
-//     event.preventDefault();
-//     const myFormData = new FormData(event.target);
-
-//     const formDataObj = Object.fromEntries(myFormData.entries());
-
-//     formDataObj.gender = myFormData.getAll('gender');
-    
-  
-
-//     const output = document.querySelector(".output-pre");
-//     output.innerText = JSON.stringify(formDataObj, null ,2);
-// };
 
 function handleSubmit(e){
     e.preventDefault()
@@ -28,14 +14,11 @@ function handleSubmit(e){
     
     const value = Object.fromEntries(data.entries())
 
-    value.data = data.getAll("results")
     
     const output = document.querySelector('.output pre')
     output.innerText = JSON.stringify(value, null,2)
 }
 
-
-
 const form = document.getElementById('contactForm')
-form.addEventListener('submit', handleSubmit)
+form.addEventListener('submit', handleSubmit,)
 
