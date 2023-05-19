@@ -101,21 +101,21 @@
 // const table = document.getElementById('show')
 
 
-function addRow(e) {
-    e.preventDefault()
+// function addRow(e) {
+//     e.preventDefault()
 
-    const data = new FormData(e.target)
-    const value = Object.fromEntries(data.entries())
+//     const data = new FormData(e.target)
+//     const value = Object.fromEntries(data.entries())
     
-    const key = Object.keys(value)
+//     const key = Object.keys(value)
 
-    const output = document.querySelector('.output pre')
-    output.innerText = JSON.stringify(key, null, 2)
-    // const row = output.insertRow(()=> Object.key(value))
-    // console.log(row)
+//     const output = document.querySelector('.output pre')
+//     output.innerText = JSON.stringify(key, null, 2)
+//     // const row = output.insertRow(()=> Object.key(value))
+//     // console.log(row)
 
-}
+// }
 
-const form = document.getElementById('contactForm')
+// const form = document.getElementById('contactForm')
 
-form.addEventListener('submit', addRow)
+// form.addEventListener('submit', addRow)
