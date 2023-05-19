@@ -52,9 +52,6 @@
 			const AddRown = document.getElementById('show');
 			const NewRow = AddRown.insertRow(n);
 
-        
-
-           
 			list1[x] = document.getElementById("fName").value;
 			list2[x] = document.getElementById("lName").value;
 			list3[x] = document.getElementById("phone").value;
@@ -92,8 +89,8 @@
             
 		}
 
-        // const form = document.getElementById('contactForm')
-        // form.addEventListener('submit', AddRow)
+        const form = document.getElementById('contactForm')
+        form.addEventListener('submit', AddRow)
 
         
 
