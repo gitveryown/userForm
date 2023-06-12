@@ -23,9 +23,17 @@
 
 // form.addEventListener('submit', addRow)
 
+const editBtn = document.createElement("button");
+editBtn.innerText = 'Edit';
 
+const deleteBtn = document.createElement("button");
+deleteBtn.innerText = 'Delete';
 
-		
+const table = document.getElementById('show')
+const row = document.getElementsByTagName('tr')
+
+const form = document.getElementById('contactForm')
+
 
 		var n = 1;
 		var x = 0;
@@ -54,17 +62,14 @@
 			const state = document.getElementById("state").value;
 			const zipCode = document.getElementById("zip").value ;
 			const address = streetAddress.concat(", ",city,",", state, ",",zipCode);
+			
+			// const editBtn = document.createElement("button");
+			// editBtn.innerText = 'Edit';
 
+			// const deleteBtn = document.createElement("button");
+			// deleteBtn.innerText = 'Delete';
 			
-			
-			const editBtn = document.createElement("button");
-			editBtn.innerText = 'Edit';
-			
-			const deleteBtn = document.createElement("button");
-			deleteBtn.innerText = 'Delete';
-			
-			
-            
+
 
 		
 			cel1.innerHTML = firstName;
@@ -75,33 +80,24 @@
 			cel6.appendChild(editBtn)
 			cel6.appendChild(deleteBtn)
 			
-            editBtn.addEventListener('submit', function(){
-				editRow(row)
-			})
-            deleteBtn.addEventListener('submit', function(){
-				deleteRow(row)
-			})
-
-			// n++;
-			// x++;
             
 		}
 
-        const form = document.getElementById('contactForm')
         form.addEventListener('submit', AddRow)
 
-        
-		// create edit and delete button on action table header
-
-		function editRow(row) {
-			const cells = row.cells;
-			const firstName = cells[0].innerHTML
-			const lastName = cells[1].innerHTML
-			const phone = cells[2].innerHTML
-			const email = cells[3].innerHTML
-			const address = cells[4].innerHTML	
-
-
+		function deleteRow(event) {
+			
+			const td = event.target.parentNode;
+			const tr = td.parentNode
+			tr.parentNode.removeChild(tr)
 			
 		}
 
+		deleteBtn.addEventListener('click' , deleteRow )
+        
+		// create edit and delete button on action table header
+	
+
+
+		
+		
