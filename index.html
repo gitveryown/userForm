@@ -47,13 +47,13 @@
                     <div class="address" id="form">
                         <label for="address" class="primary">Address:</label>
                         <label for="street">Street Address</label>
-                        <input name="Street address" type="text" for="streetAddress" id="address">
+                        <input name="streetAddress" type="text" for="streetAddress" id="streetAddress">
                         <label for="city">City</label>
-                        <input name="City" type="text" for="city">
+                        <input name="city" type="text" for="city" id="city">
                         <label for="zip">Zip Code</label>
-                        <input name="Zip code" type="text" for="zip">
-                        <label for="country">Country</label>
-                        <select name="Country" id="country">
+                        <input name="zipCode" type="text" for="zip" id="zip">
+                        <!-- <label for="country">Country</label> 
+                         <select name="Country" id="country">
                                 <option>select country</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Aland Islands</option>
@@ -307,7 +307,7 @@
                                 <option value="YE">Yemen</option>
                                 <option value="ZM">Zambia</option>
                                 <option value="ZW">Zimbabwe</option>
-                            </select>
+                            </select> -->
 
                         </select>
                         <label for="state">State / Province</label>
@@ -367,7 +367,7 @@
                         </select>
                     </div>
 
-                    <div id="gender">
+                    <!-- <div id="gender">
                         <label for="genderOption1" class="primary">Gender:</label>
                         <input name="Gender" type="radio" value="male">
                         <label for="male">Male</label>
@@ -378,7 +378,7 @@
                         <div id="dob">
                             <label for="dob" class="primary">Date-of-Birth:</label>
                             <input name="Date of Birth" type="date" for="dob" id="dob">
-                        </div>
+                        </div> -->
                     
                     <button class="btn" id="btn" type="submit">Submit</button>
 
@@ -401,10 +401,9 @@
 					<th>Phone Number</th>
 					<th>Email</th>
                     <th>Address</th>
-                    <th>Country</th>
-                    <th>State</th>
-                    <th>Gender</th>
-                    <th>DOB</th>
+                    <!-- <th>Country</th> -->
+                    <!-- <th>State</th> -->
+                    <th>Action</th>
 				</tr>
 			
 		</table>
@@ -413,5 +412,6 @@
        
 
         <script src="script.js"></script>
+        <!-- <script src="objArr.js"></script> -->
 </body>
 </html>
